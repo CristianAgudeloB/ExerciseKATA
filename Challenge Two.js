@@ -8,10 +8,10 @@ function squaredList(arr, S) {
     // Array con los cuadrados
     let squaredArray = arr.map(num => num * num);
 
-    // Filtrar los valores que estén fuera del rango
+    // Remover los valores que estén fuera del rango
     let RemovedArray = squaredArray.filter(num => num >= 0 && num <= SS);
 
-    // Ordenar el array usando una implementación de bubble sort
+    // Ordenamiento
     for (let i = 0; i < RemovedArray.length - 1; i++) {
         for (let j = 0; j < RemovedArray.length - i - 1; j++) {
             if (RemovedArray[j] > RemovedArray[j + 1]) {
